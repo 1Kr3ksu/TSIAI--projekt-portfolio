@@ -1,0 +1,110 @@
+h1 {
+    text-align: center
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+header {
+    background-color: rgb(0, 255, 106);
+    color: #fff;
+}
+
+section {
+
+    background-color: #ecf0f1;
+    color: #333;
+    border: 1px solid #bdc3c7;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+li::before {
+    content: '\2022';
+    color: #3498db;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+footer {
+    background-color: rgb(0, 255, 106);
+    color: #fff;
+    padding: -10px;
+    text-align: center;
+
+
+}
+
+
+
+.about-me,
+.skills,
+.projects {
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    border: 3px solid #bdc3c7;
+}
+
+
+a {
+    color: #348adb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8c2121;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    li::before {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    header {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
